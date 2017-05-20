@@ -16,7 +16,10 @@
 	    );
 	}
 	
-	
-
 	add_action('wp_enqueue_scripts', 'loadingStyles');
+
+	register_nav_menus(array(
+        'primary' => 'Nawigacja główna',
+        'secondary' => 'Nawigacja w stopce' 
+    ));
 ?>
