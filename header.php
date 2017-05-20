@@ -13,8 +13,12 @@
                     <?php bloginfo('name'); ?>   
                 </a>
             </h1>
-            <h2>
-                <?php bloginfo('description'); ?>
-            </h2>
+            <nav class="main-nav">
+                <?php
+                    wp_nav_menu( array(
+                        'menu' => 'primary'
+                    ));
+                ?>
+            </nav>
         </header>
     </body>
