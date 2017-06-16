@@ -6,7 +6,7 @@
 			'menu' => 'secondary'
 		));
 	?>
-
+	
 </footer>
 
 <?php wp_footer(); ?>
