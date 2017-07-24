@@ -8,17 +8,22 @@
     </head>
     <body>
         <header>
-            <h1>
-                <a href="<?php echo home_url(); ?>">
-                    <?php bloginfo('name'); ?>   
-                </a>
-            </h1>
             <nav class="main-nav">
+                <h1 class="logo">
+                    <a class="title-link" href="<?php echo home_url(); ?>">
+                        <?php bloginfo('name'); ?>
+                    </a>
+                </h1>
                 <?php
                     wp_nav_menu( array(
-                        'menu' => 'primary'
+                        'menu' => 'primary',
+                        'menu_class' => 'navigation',
+                        'container_class' => 'navigation-container'
                     ));
                 ?>
             </nav>
+            <section class="main-banner">
+
+            </section>
         </header>
     </body>
