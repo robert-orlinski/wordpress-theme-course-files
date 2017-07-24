@@ -11,6 +11,108 @@ Tags: modern, blog, right-sidebar, edytowalny, spolszczony,
 Text Domain: modernblog
 */
 
+*{
+	box-sizing: border-box;
+}
 body{
-	margin: 15px;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+a:hover{
+	text-decoration: none;
+}
+
+/*============================================== NAVIGATION ==============================================*/
+
+nav.main-nav{
+	position: fixed;
+	width: 100vw;
+	height: 6rem;
+	background-color: rgba(16,19,26,.7);
+	padding: 0 1.5rem;
+}
+h1.logo{
+	float: left;
+	margin: 0;
+	padding: 0;
+	font-size: 1.8rem;
+}
+a.title-link{
+	color: #fff;
+	transition: 400ms;
+	line-height: 6rem;
+	padding: 1.8rem 1rem;
+}
+a.title-link:hover{
+	background-color: rgba(16,19,26,1);
+}
+.navigation-container{
+	width: 59vw;
+	float: right;
+}
+ul.navigation li{
+	list-style: none;
+	display: inline-block;
+	float: right;
+}
+ul.navigation li a{
+	line-height: 6rem;
+	color: #fff;
+	transition: 400ms;
+	font-size: 1.5rem;
+	padding: 2rem 1rem;
+}
+ul.navigation li a:hover{
+	background-color: rgba(16,19,26,1);
+}
+
+/*============================================== BANNER ==============================================*/
+
+section.main-banner{
+	width: 100vw;
+	height: 50vh;
+	background-image: url('http://localhost:8080/wordpress/wp-content/uploads/2017/07/forest.jpg');
+	background-size: cover;
+	background-position: 0 30%;
+}
+
+/*============================================== MAIN CONTENT ==============================================*/
+
+main.content{
+	width: 80vw;
+	margin: 2rem auto 3rem auto;
+}
+article.blog-container{
+	width: 70%;
+}
+section.post{
+	padding: .5rem 0;
+	width: 100%;
+}
+h2.post-title{
+	font-size: 3.2rem;
+	margin-bottom: 1.6rem;
+}
+a.post-link{
+	color: #10131a;
+	transition: 400ms;
+}
+a.post-link:hover{
+	opacity: .6;
+}
+
+/*============================================== FOOTER ==============================================*/
+
+footer.site-info{
+	width: 100vw;
+	height: 6rem;
+	background-color: #10131a;
+	color: #fff;
+}
+.proper-info{
+	width: 80vw;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	line-height: 6rem;
 }
