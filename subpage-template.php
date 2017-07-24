@@ -8,7 +8,7 @@ get_header();
 		
 		<article class="post">
 			<h2><?php the_title(); ?></h2>
-				<img src="http://localhost/wordpress/wp-content/uploads/2017/06/avi-richards-183715-1-e1497029822241.jpg">
+				<img src="http://localhost:8080/wordpress/wp-content/uploads/2017/07/avi-richards-183715-e1500226465857.jpg">
 			<?php the_content(); ?>
 		</article>
 				
