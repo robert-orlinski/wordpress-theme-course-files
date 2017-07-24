@@ -1,12 +1,7 @@
-<footer>
-	<?php echo date('Y'); ?> &copy; <?php bloginfo('name'); ?>
-
-	<?php
-		wp_nav_menu( array(
-			'menu' => 'secondary'
-		));
-	?>
-	
+<footer class="site-info">
+	<div class="proper-info">
+		<?php echo date('Y'); ?> &copy; <?php bloginfo('name'); ?>
+	</div>
 </footer>
 
 <?php wp_footer(); ?>
