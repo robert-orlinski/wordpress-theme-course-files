@@ -22,6 +22,10 @@ body{
 a:hover{
 	text-decoration: none;
 }
+img{
+	max-width: 100%;
+	height: auto;
+}
 
 /*============================================== NAVIGATION ==============================================*/
 
@@ -71,8 +75,8 @@ ul.navigation li a:hover{
 
 section.main-banner{
 	width: 100vw;
-	height: 50vh;
-	background-image: url('http://localhost:8080/wordpress/wp-content/uploads/2017/07/forest.jpg');
+	height: 60vh;
+	background-image: url('img/forest.jpeg');
 	background-size: cover;
 	background-position: 0 30%;
 }
@@ -80,19 +84,21 @@ section.main-banner{
 /*============================================== MAIN CONTENT ==============================================*/
 
 main.content{
-	width: 80vw;
+	width: 1040px;
 	margin: 2rem auto 3rem auto;
 }
 article.blog-container{
-	width: 70%;
+	width: 720px;
 }
 section.post{
-	padding: .5rem 0;
 	width: 100%;
 }
 h2.post-title{
 	font-size: 3.2rem;
-	margin-bottom: 1.6rem;
+	margin: 3.5rem auto 1.6rem auto;
+}
+p.post-meta{
+	font-size: 1.45rem;
 }
 a.post-link{
 	color: #10131a;
@@ -100,6 +106,22 @@ a.post-link{
 }
 a.post-link:hover{
 	opacity: .6;
+}
+.categories{
+	background-color: #10131a;
+	color: #fff;
+}
+a.category:hover{
+	text-decoration: none;
+}
+.post-thumbnail{
+	margin: 2rem 0;
+}
+.post-content{
+	font-size: 1.5rem;
+}
+hr.post-separator{
+	margin: 3.5rem 0 0 0;
 }
 
 /*============================================== FOOTER ==============================================*/
@@ -111,7 +133,7 @@ footer.site-info{
 	color: #fff;
 }
 .proper-info{
-	width: 80vw;
+	width: 1040px;
 	margin: 0 auto;
 	font-size: 1.5rem;
 	line-height: 6rem;
