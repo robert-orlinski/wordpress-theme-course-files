@@ -87,15 +87,19 @@ main.content{
 	width: 1040px;
 	margin: 2rem auto 3rem auto;
 }
+h2.archive-title{
+	font-size: 3.6rem;
+	margin: 4rem auto 2rem auto;
+}
 article.blog-container{
 	width: 720px;
 }
 section.post{
 	width: 100%;
 }
-h2.post-title{
+h3.post-title{
 	font-size: 3.2rem;
-	margin: 3.5rem auto 1.6rem auto;
+	margin: 3rem auto 1.6rem auto;
 }
 p.post-meta{
 	font-size: 1.45rem;

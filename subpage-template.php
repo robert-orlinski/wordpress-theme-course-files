@@ -7,7 +7,7 @@ get_header();
 		while (have_posts()) : the_post(); ?>
 		
 		<article class="post">
-			<h2><?php the_title(); ?></h2>
+			<h3><?php the_title(); ?></h3>
 				<img src="http://localhost:8080/wordpress/wp-content/uploads/2017/07/avi-richards-183715-e1500226465857.jpg">
 			<?php the_content(); ?>
 		</article>
