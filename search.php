@@ -4,31 +4,13 @@ get_header(); ?>
 	<main class="content">
 		<article class="blog-container">
 			<?php
-				if (have_posts()) :	
-			?>
-					
-				<h2 class="archive-title">
-					<?php 
-						if (is_category()) {
-							single_cat_title('Category: ');
-						} elseif (is_tag()) {
-							single_tag_title('Tag: ');
-						} elseif (is_author()) {
-							echo 'Author: ' . get_the_author();
-						} elseif (is_day()) {
-							echo 'Day: ' . get_the_date();
-						} elseif (is_month()) {
-							echo 'Month: ' . get_the_date('F Y');
-						} elseif (is_year()) {
-							echo 'Year: ' . get_the_date('Y');
-						} else {
-							echo 'Archive';
-						}
-					?>
-				</h2>	
-				
-				<?php
-					while (have_posts()) : the_post(); ?>
+				if (have_posts()) : ?>
+
+					<h2 class="archive-title">
+						Results for: <?php the_search_query(); ?>
+					</h2>
+		
+					<?php while (have_posts()) : the_post(); ?>
 
 					<section class="post">
 						<h3 class="post-title">
@@ -69,7 +51,9 @@ get_header(); ?>
 				endif; ?>
 
 		</article>
+
 		<?php get_sidebar(); ?>
+		
 	</main>
 
 <?php

@@ -84,6 +84,7 @@ section.main-banner{
 /*============================================== MAIN CONTENT ==============================================*/
 
 main.content{
+	display: flex;
 	width: 1040px;
 	margin: 2rem auto 3rem auto;
 }
@@ -126,6 +127,44 @@ a.category:hover{
 }
 hr.post-separator{
 	margin: 3.5rem 0 0 0;
+}
+
+/*============================================== SIDEBAR ==============================================*/
+
+aside.sidebar{
+	width: 280px;
+	margin-left: 40px;
+	padding-top: 3rem;
+}
+
+.assistive-text {
+	font-size: 1.8rem;
+	display: inline-block;	
+}
+
+.field {
+	width: 70%;
+	height: 3rem;
+	border: 1px solid #000;
+}
+
+.submit {
+	position: relative;
+	width: 28.6%;
+	height: 3rem;
+	top: -.1rem;
+	margin-top: 1.5rem;
+    border: 1px solid #000;
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: #000;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+.submit:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 /*============================================== FOOTER ==============================================*/

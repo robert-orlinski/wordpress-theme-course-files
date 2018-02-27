@@ -46,6 +46,9 @@ get_header(); ?>
 				endif; ?>
 
 		</article>
+
+		<?php get_sidebar(); ?>
+		
 	</main>
 
 <?php
